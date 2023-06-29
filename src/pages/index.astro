@@ -3,5 +3,55 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="text-6xl">Portfolio</main>
+  <main class="container mx-auto">
+    <!-- Navigator component -->
+    <section>
+      <header
+        class="py-6 px-10 flex items-center fixed top-0 container justify-between"
+      >
+        <div>Camilo Hernández</div>
+        <nav>
+          <ul
+            class="flex [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+          >
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+    <!-- End Navigator Component -->
+
+    <!-- Presentation Component -->
+    <section class="py-40 flex flex-col items-center gap-10">
+      <article class="flex flex-col gap-10 self-stretch">
+        <h2 class="text-2xl font-medium text-center">
+          Hey there, I’m Camilo Hernández 👋
+        </h2>
+        <h1 class="text-7xl font-semibold text-center">
+          Developing digital products, services and experience.
+        </h1>
+      </article>
+      <article class="flex justify-center items-start gap-3.5">
+        <a href="#">
+          <img src="/images/icon-instagram.svg" alt="camilohreina" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-gitlab.svg" alt="juan_c.hernandez_r" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-github.svg" alt="camilohreina" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-linkedin.svg" alt="camilohreina" />
+        </a>
+        <a href="#">
+          <img src="/images/icon-twitter.svg" alt="camilohreina" />
+        </a>
+      </article>
+    </section>
+    <!-- End Presentation Component -->
+  </main>
 </Layout>
