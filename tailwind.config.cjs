@@ -5,7 +5,12 @@ module.exports = {
 		fontFamily:{
 			sans: ['Inter']
 		},
-		extend: {},
+		extend: {
+			backgroundImage: {
+				'adicustom': "url('/projects/adidas-project.png')",
+				'nike': "url('/projects/nike-project.png')",
+			  }
+		},
 	},
 	plugins: [],
 }

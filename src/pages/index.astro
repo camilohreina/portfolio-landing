@@ -6,10 +6,8 @@ import Layout from "../layouts/Layout.astro";
   <main class="container mx-auto">
     <!-- Navigator component -->
     <section>
-      <header
-        class="py-6 px-10 flex items-center fixed top-0 container justify-between"
-      >
-        <div>Camilo Hernández</div>
+      <header class="py-6 px-10 flex items-center container justify-between">
+        <div><p class="font-bold">Hola!</p></div>
         <nav>
           <ul
             class="flex [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
@@ -25,7 +23,7 @@ import Layout from "../layouts/Layout.astro";
     <!-- End Navigator Component -->
 
     <!-- Presentation Component -->
-    <section class="py-40 flex flex-col items-center max-w-7xl gap-10">
+    <section class="py-28 flex flex-col items-center mx-auto max-w-7xl gap-10">
       <article class="flex flex-col gap-10 self-stretch">
         <h2 class="text-xl font-medium text-center">
           Hey there, I’m Camilo Hernández 👋
@@ -55,9 +53,9 @@ import Layout from "../layouts/Layout.astro";
     <!-- End Presentation Component -->
 
     <!-- Stack Component -->
-    <section class="flex flex-col items-center max-w-7xl gap-10">
+    <section class="flex flex-col items-center mx-auto max-w-7xl gap-10">
       <div class="separator">
-        <span class="text">STACKS</span>
+        <span class="text">STACK</span>
       </div>
       <article
         class="flex scale-75 justify-center items-center gap-8 self-stretch"
@@ -80,6 +78,28 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </section>
     <!-- End Stack Component -->
+
+    <!-- Projects Component -- TODO: Make card design-->
+    <section class="flex flex-col items-start gap-12 p-28 mx-auto max-w-7xl">
+      <article class="flex items-start gap-2 max-w-[37rem]">
+        <h3 class="font-semibold text-5xl leading-[3.75rem]">
+          The work I do, <br /> and business I help.
+        </h3>
+      </article>
+      <article class="flex items-start gap-8">
+        <aside class="flex items-start py-0 gap-20">
+          <div
+            class="bg-auto w-[512px] h-[656px] bg-no-repeat bg-center bg-adicustom flex flex-col items-start gap-6"
+          >
+          </div>
+          <div
+            class="bg-auto w-[512px] h-[656px] bg-no-repeat bg-center bg-nike flex flex-col items-start gap-6"
+          >
+          </div>
+        </aside>
+      </article>
+    </section>
+    <!-- End Projects Component -->
   </main>
 </Layout>
 
