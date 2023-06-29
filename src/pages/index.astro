@@ -25,12 +25,12 @@ import Layout from "../layouts/Layout.astro";
     <!-- End Navigator Component -->
 
     <!-- Presentation Component -->
-    <section class="py-40 flex flex-col items-center gap-10">
+    <section class="py-40 flex flex-col items-center max-w-7xl gap-10">
       <article class="flex flex-col gap-10 self-stretch">
-        <h2 class="text-2xl font-medium text-center">
+        <h2 class="text-xl font-medium text-center">
           Hey there, I’m Camilo Hernández 👋
         </h2>
-        <h1 class="text-7xl font-semibold text-center">
+        <h1 class="text-7xl leading-normal font-semibold text-center">
           Developing digital products, services and experience.
         </h1>
       </article>
@@ -53,5 +53,62 @@ import Layout from "../layouts/Layout.astro";
       </article>
     </section>
     <!-- End Presentation Component -->
+
+    <!-- Stack Component -->
+    <section class="flex flex-col items-center max-w-7xl gap-10">
+      <div class="separator">
+        <span class="text">STACKS</span>
+      </div>
+      <article
+        class="flex scale-75 justify-center items-center gap-8 self-stretch"
+      >
+        <img src="/images/js.svg" alt="JavaScript" />
+        <img src="/images/typescript.svg" alt="TypeScript" />
+        <img src="/images/vue.svg" alt="VueJs" />
+        <img src="/images/react.svg" alt="ReactJs" />
+        <img src="/images/nodejs.svg" alt="NodeJS" />
+        <img src="/images/python.svg" alt="Python" />
+        <img src="/images/aws.svg" alt="AWS" />
+        <img src="/images/linux.svg" alt="Linux" />
+        <img src="/images/docker.svg" alt="Docker" />
+        <img src="/images/mysql.svg" alt="MySQL" />
+        <img src="/images/mongodb.svg" alt="MongoDB" />
+        <img src="/images/git.svg" alt="Git" />
+      </article>
+      <div class="separator">
+        <img src="/images/arrow-circle-down.svg" alt="Arrow down" />
+      </div>
+    </section>
+    <!-- End Stack Component -->
   </main>
 </Layout>
+
+<style>
+  .separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76rem;
+    height: 0.0625rem;
+    background: linear-gradient(
+      90deg,
+      #9ca3af 0%,
+      rgba(156, 163, 175, 0) 39.47%,
+      rgba(156, 163, 175, 0) 50%,
+      rgba(156, 163, 175, 0) 60.51%,
+      #9ca3af 100%
+    );
+  }
+
+  .text {
+    color: #6b7280;
+    text-align: center;
+
+    /* Body sm / tracking-2 / SemiBold */
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: 0.125rem;
+  }
+</style>
