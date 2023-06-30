@@ -9,7 +9,10 @@ module.exports = {
 			backgroundImage: {
 				'adicustom': "url('/projects/adidas-project.png')",
 				'nike': "url('/projects/nike-project.png')",
-			  }
+			  },
+			  colors: {
+				'blue-box': '#DEF1FC',
+			  },
 		},
 	},
 	plugins: [],
