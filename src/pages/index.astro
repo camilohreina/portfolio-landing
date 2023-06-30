@@ -84,8 +84,8 @@ import Layout from "../layouts/Layout.astro";
     <!-- End Stack Component -->
 
     <!-- Projects Component -- TODO: Make card design-->
-    <section class="flex flex-col items-start gap-12 py-28 mx-auto max-w-7xl">
-      <article class="flex items-start gap-2 max-w-[37rem]">
+    <section class="flex flex-col items-center gap-12 py-28 mx-auto max-w-7xl">
+      <article class="flex items-start gap-2 px-20 w-[80rem]">
         <h3 class="font-semibold text-5xl leading-[3.75rem]">
           The work I do, <br /> and business I help.
         </h3>
@@ -108,9 +108,11 @@ import Layout from "../layouts/Layout.astro";
     <!-- Services Component -->
     <section class="flex flex-col gap-10 items-center py-28 mx-auto max-w-7xl">
       <article class="w-[80rem] h-[35rem]">
-        <aside class="flex h-[35rem] bg-blue-box items-center gap-3 shrink-0">
-          <div class="flex w-[80rem] items-center gap-12">
-            <div class="flex w-[30.5rem] px-16 flex-col items-start gap-8">
+        <aside
+          class="flex rounded-md h-[35rem] bg-blue-box items-center gap-3 shrink-0"
+        >
+          <div class="flex w-[80rem] items-center justify-center gap-10">
+            <div class="flex w-[30.5rem] px-14 flex-col items-start gap-8">
               <div class="flex flex-col items-start gap-4 self-stretch">
                 <div class="flex flex-col self-stretch">
                   <h3 class="text-5xl font-semibold leading-10">
@@ -183,6 +185,22 @@ import Layout from "../layouts/Layout.astro";
     </section>
 
     <!-- End Services Component -->
+    <!-- Enterprise Component -->
+    <section class="flex flex-col items-center mx-auto py-28 max-w-7xl gap-10">
+      <div class="separator">
+        <span class="text">CRAFTED DEVELOPMENTS FOR</span>
+      </div>
+      <article class="flex justify-center items-center gap-8 self-stretch">
+        <img src="/images/branger.svg" width="150px" alt="Branger_Briz" />
+        <img src="/images/adidas.png" width="150px" alt="Adidas" />
+        <img src="/images/nike.png" width="70px" alt="Nike" />
+        <img src="/images/paramount.png" width="130px" alt="Paramount" />
+      </article>
+      <div class="separator">
+        <span class="text">MORE THAN 10+ BRANDS</span>
+      </div>
+    </section>
+    <!-- End Enterprise Component -->
   </main>
 </Layout>
 
