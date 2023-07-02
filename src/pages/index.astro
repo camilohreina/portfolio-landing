@@ -202,24 +202,47 @@ import Layout from "../layouts/Layout.astro";
     </section>
     <!-- End Enterprise Component -->
     <!-- About Component -->
-    <section class="flex items-center justify-evenly mx-auto py-28 max-w-7xl">
-      <article class="w-[30rem]">
-        <h3 class="font-semibold text-5xl">A bit about me</h3>
-        <p class="py-8 text-base font-normal leading-7">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in
-          et, lectus sit lorem id integer. Nunc odio in et, lectus sit lorem id
-          integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Nunc odio in et, lectus. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus
-          sit lorem id integer.
-        </p>
-      </article>
-      <article>
-        <img class="rounded-full" src="/images/1.png" />
-      </article>
+    <section class="flex justify-center mx-auto py-28 max-w-7xl">
+      <aside class="flex px-8 shadow-lg gap-x-10">
+        <article class="w-[30rem]">
+          <h3 class="font-semibold text-5xl">A bit about me</h3>
+          <p class="py-8 text-base font-normal leading-7">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+            in et, lectus sit lorem id integer. Nunc odio in et, lectus sit
+            lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Nunc odio in et,
+            lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nunc odio in et, lectus sit lorem id integer.
+          </p>
+        </article>
+        <article>
+          <img class="rounded-full" src="/images/1.png" />
+        </article>
+      </aside>
     </section>
     <!-- End About Component -->
+
+    <!-- Data component -->
+    <section class="flex flex-col items-center mx-auto py-28 max-w-7xl gap-10">
+      <div class="separator"></div>
+      <article class="flex justify-evenly items-center gap-10 self-stretch">
+        <div>
+          <h3 class="text-4xl font-semibold">5</h3>
+          <span class="text">YEARS OF <br /> EXPERIENCE</span>
+        </div>
+        <div>
+          <h3 class="text-4xl font-semibold">+6</h3>
+          <span class="text">WEB AND MOBILE <br /> APPS SHIPPED</span>
+        </div>
+        <div>
+          <h3 class="text-4xl font-semibold">+250</h3>
+          <span class="text">TASKS <br /> COMPLETED</span>
+        </div>
+      </article>
+      <div class="separator"></div>
+    </section>
+    <!--End Data component -->
   </main>
 </Layout>
 
