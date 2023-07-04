@@ -54,7 +54,7 @@ import Layout from "../layouts/Layout.astro";
 
     <!-- Stack Component -->
     <section class="flex flex-col items-center mx-auto py-28 max-w-7xl gap-10">
-      <div class="separator">
+      <div class="separator w-full">
         <span class="text">STACK</span>
       </div>
       <article
@@ -73,7 +73,7 @@ import Layout from "../layouts/Layout.astro";
         <img src="/images/mongodb.svg" alt="MongoDB" />
         <img src="/images/git.svg" alt="Git" />
       </article>
-      <div class="separator">
+      <div class="separator w-full">
         <img
           class="animate-bounce"
           src="/images/arrow-circle-down.svg"
@@ -85,7 +85,7 @@ import Layout from "../layouts/Layout.astro";
 
     <!-- Projects Component -- TODO: Make card design-->
     <section class="flex flex-col items-center gap-12 py-28 mx-auto max-w-7xl">
-      <article class="flex items-start gap-2 px-20 w-[80rem]">
+      <article class="flex items-start gap-2 px-20">
         <h3 class="font-semibold text-5xl leading-[3.75rem]">
           The work I do, <br /> and business I help.
         </h3>
@@ -128,12 +128,12 @@ import Layout from "../layouts/Layout.astro";
 
     <!-- Services Component -->
     <section class="flex flex-col gap-10 items-center py-28 mx-auto max-w-7xl">
-      <article class="w-[80rem] h-[35rem]">
+      <article class="h-[35rem]">
         <aside
           class="flex rounded-md h-[35rem] bg-blue-box items-center gap-3 shrink-0"
         >
-          <div class="flex w-[80rem] items-center justify-center gap-10">
-            <div class="flex w-[30.5rem] px-14 flex-col items-start gap-8">
+          <div class="flex items-center justify-center gap-6">
+            <div class="flex lg:w-[30.5rem] px-14 flex-col items-start gap-8">
               <div class="flex flex-col items-start gap-4 self-stretch">
                 <div class="flex flex-col self-stretch">
                   <h3 class="text-5xl font-semibold leading-10">
@@ -208,7 +208,7 @@ import Layout from "../layouts/Layout.astro";
     <!-- End Services Component -->
     <!-- Enterprise Component -->
     <section class="flex flex-col items-center mx-auto py-28 max-w-7xl gap-10">
-      <div class="separator">
+      <div class="separator w-full">
         <span class="text">CRAFTED DEVELOPMENTS FOR</span>
       </div>
       <article class="flex justify-center items-center gap-8 self-stretch">
@@ -217,7 +217,7 @@ import Layout from "../layouts/Layout.astro";
         <img src="/images/nike.png" width="70px" alt="Nike" />
         <img src="/images/paramount.png" width="130px" alt="Paramount" />
       </article>
-      <div class="separator">
+      <div class="separator w-full">
         <span class="text">MORE THAN 10+ BRANDS</span>
       </div>
     </section>
@@ -246,7 +246,7 @@ import Layout from "../layouts/Layout.astro";
 
     <!-- Data component -->
     <section class="flex flex-col items-center mx-auto py-28 max-w-7xl gap-10">
-      <div class="separator"></div>
+      <div class="separator w-full"></div>
       <article class="flex justify-evenly items-center gap-10 self-stretch">
         <div>
           <h3 class="text-4xl font-semibold">5</h3>
@@ -261,7 +261,7 @@ import Layout from "../layouts/Layout.astro";
           <span class="text">TASKS <br /> COMPLETED</span>
         </div>
       </article>
-      <div class="separator"></div>
+      <div class="separator w-full"></div>
     </section>
     <!--End Data component -->
   </main>
@@ -305,7 +305,6 @@ import Layout from "../layouts/Layout.astro";
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 76rem;
     height: 0.0625rem;
     background: linear-gradient(
       90deg,
