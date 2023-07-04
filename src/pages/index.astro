@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Camilohreina Portfolio">
   <main class="container mx-auto">
     <!-- Navigator component -->
     <section>
@@ -92,14 +92,35 @@ import Layout from "../layouts/Layout.astro";
       </article>
       <article class="flex items-start gap-8">
         <aside class="flex items-start py-0 gap-20">
-          <div
-            class="bg-auto w-[512px] h-[656px] bg-no-repeat bg-center bg-adicustom flex flex-col items-start gap-6"
-          >
-          </div>
-          <div
-            class="bg-auto w-[512px] h-[656px] bg-no-repeat bg-center bg-nike flex flex-col items-start gap-6"
-          >
-          </div>
+          <section class="flex flex-col shadow-md rounded-md">
+            <div
+              class="bg-auto w-[512px] h-[656px] bg-no-repeat bg-center bg-adicustom flex flex-col items-start gap-6"
+            >
+            </div>
+            <div class="flex flex-row justify-around items-center">
+              <h3 class="text-xl font-semibold leading-4">Adicustom</h3>
+              <div class="flex flex-row justify-end gap-x-6 py-6 [&>img]:w-8">
+                <img src="/images/typescript-gray.svg" alt="VueJs" />
+                <img src="/images/vue-gray.svg" alt="VueJs" />
+                <img src="/images/node-gray.svg" alt="ReactJs" />
+              </div>
+            </div>
+          </section>
+
+          <section class="flex flex-col shadow-md rounded-md">
+            <div
+              class="bg-auto w-[512px] h-[656px] bg-no-repeat bg-center bg-nike flex flex-col items-start gap-6"
+            >
+            </div>
+            <div class="flex flex-row justify-around items-center">
+              <h3 class="text-xl font-semibold leading-4">Nikecustom Caps</h3>
+              <div class="flex flex-row justify-end gap-x-6 py-6 [&>img]:w-8">
+                <img src="/images/js-gray.svg" alt="VueJs" />
+                <img src="/images/react-gray.svg" alt="ReactJs" />
+                <img src="/images/node-gray.svg" alt="NodeJS" />
+              </div>
+            </div>
+          </section>
         </aside>
       </article>
     </section>
@@ -255,7 +276,7 @@ import Layout from "../layouts/Layout.astro";
           <p class="text-3xl">Let's talk ↗</p>
         </div>
         <div class="mt-8">
-          <p class="text-2xl">hi@differnt.dev</p>
+          <p class="text-lg">hi@differnt.dev</p>
         </div>
       </aside>
       <aside class="flex justify-center items-start gap-3.5">
