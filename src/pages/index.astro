@@ -5,12 +5,14 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Camilohreina Portfolio">
   <main class="container mx-auto">
     <!-- Navigator component -->
-    <section>
-      <header class="py-6 px-10 flex items-center container justify-between">
+    <section class="w-full">
+      <header
+        class="py-6 px-4 md:px-10 flex items-center container justify-between"
+      >
         <div><p class="font-bold">Hola!</p></div>
         <nav>
           <ul
-            class="flex [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+            class="flex [&>li>a]:text-sm md:[&>li>a]:text-normal [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
           >
             <li><a href="#">Work</a></li>
             <li><a href="#">Services</a></li>
@@ -28,7 +30,9 @@ import Layout from "../layouts/Layout.astro";
         <h2 class="text-xl font-medium text-center">
           Hey there, I’m Camilo Hernández 👋
         </h2>
-        <h1 class="text-7xl leading-normal font-semibold text-center">
+        <h1
+          class="text-5xl lg:text-7xl leading-normal font-semibold text-center"
+        >
           Developing digital products, services and experience.
         </h1>
       </article>
@@ -58,7 +62,7 @@ import Layout from "../layouts/Layout.astro";
         <span class="text">STACK</span>
       </div>
       <article
-        class="flex scale-75 justify-center items-center gap-8 self-stretch"
+        class="flex w-full flex-wrap scale-75 justify-center items-center gap-8 self-stretch"
       >
         <img src="/images/js.svg" alt="JavaScript" />
         <img src="/images/typescript.svg" alt="TypeScript" />
@@ -85,220 +89,217 @@ import Layout from "../layouts/Layout.astro";
 
     <!-- Projects Component -- TODO: Make card design-->
     <section class="flex flex-col items-center gap-12 py-28 mx-auto max-w-7xl">
-      <article class="flex items-start gap-2 px-20">
-        <h3 class="font-semibold text-5xl leading-[3.75rem]">
+      <article class="flex w-full items-start gap-2 px-20">
+        <h3 class="font-semibold text-3xl lg:text-5xl lg:leading-[3.75rem]">
           The work I do, <br /> and business I help.
         </h3>
       </article>
-      <article class="flex items-start gap-8">
-        <aside class="flex items-start py-0 gap-20">
-          <section class="flex flex-col shadow-md rounded-md">
-            <div
-              class="bg-auto w-[512px] h-[656px] bg-no-repeat bg-center bg-adicustom flex flex-col items-start gap-6"
-            >
+      <article
+        class="flex w-full p-4 lg:p-0 items-start justify-around flex-wrap gap-8"
+      >
+        <section class="flex flex-col shadow-md rounded-md">
+          <img src="/projects/adidas-project.png" />
+          <div class="flex flex-row justify-around items-center">
+            <h3 class="text-xl font-semibold leading-4">Adicustom</h3>
+            <div class="flex flex-row justify-end gap-x-6 py-6 [&>img]:w-8">
+              <img src="/images/typescript-gray.svg" alt="VueJs" />
+              <img src="/images/vue-gray.svg" alt="VueJs" />
+              <img src="/images/node-gray.svg" alt="ReactJs" />
             </div>
-            <div class="flex flex-row justify-around items-center">
-              <h3 class="text-xl font-semibold leading-4">Adicustom</h3>
-              <div class="flex flex-row justify-end gap-x-6 py-6 [&>img]:w-8">
-                <img src="/images/typescript-gray.svg" alt="VueJs" />
-                <img src="/images/vue-gray.svg" alt="VueJs" />
-                <img src="/images/node-gray.svg" alt="ReactJs" />
-              </div>
-            </div>
-          </section>
+          </div>
+        </section>
 
-          <section class="flex flex-col shadow-md rounded-md">
-            <div
-              class="bg-auto w-[512px] h-[656px] bg-no-repeat bg-center bg-nike flex flex-col items-start gap-6"
-            >
+        <section class="flex flex-col shadow-md rounded-md">
+          <img src="/projects/nike-project.png" />
+          <div class="flex flex-row justify-around items-center">
+            <h3 class="text-xl font-semibold leading-4">Nikecustom Caps</h3>
+            <div class="flex flex-row justify-end gap-x-6 py-6 [&>img]:w-8">
+              <img src="/images/js-gray.svg" alt="VueJs" />
+              <img src="/images/react-gray.svg" alt="ReactJs" />
+              <img src="/images/node-gray.svg" alt="NodeJS" />
             </div>
-            <div class="flex flex-row justify-around items-center">
-              <h3 class="text-xl font-semibold leading-4">Nikecustom Caps</h3>
-              <div class="flex flex-row justify-end gap-x-6 py-6 [&>img]:w-8">
-                <img src="/images/js-gray.svg" alt="VueJs" />
-                <img src="/images/react-gray.svg" alt="ReactJs" />
-                <img src="/images/node-gray.svg" alt="NodeJS" />
-              </div>
-            </div>
-          </section>
-        </aside>
+          </div>
+        </section>
       </article>
     </section>
-    <!-- End Projects Component -->
+  </main>
+  <!-- End Projects Component -->
 
-    <!-- Services Component -->
-    <section class="flex flex-col gap-10 items-center py-28 mx-auto max-w-7xl">
-      <article class="h-[35rem]">
-        <aside
-          class="flex rounded-md h-[35rem] bg-blue-box items-center gap-3 shrink-0"
+  <!-- Services Component -->
+  <section class="flex flex-col gap-10 items-center py-28 mx-auto max-w-7xl">
+    <aside
+      class="md:p-8 lg:p-0 w-full flex rounded-md bg-blue-box items-center gap-3 shrink-0"
+    >
+      <div class="flex flex-col lg:flex-row items-center justify-center gap-6">
+        <div
+          class="flex w-full xl:w-[30.5rem] px-14 flex-col items-start gap-8"
         >
-          <div class="flex items-center justify-center gap-6">
-            <div class="flex lg:w-[30.5rem] px-14 flex-col items-start gap-8">
-              <div class="flex flex-col items-start gap-4 self-stretch">
-                <div class="flex flex-col self-stretch">
-                  <h3 class="text-5xl font-semibold leading-10">
-                    What I do for my customers
-                  </h3>
-                </div>
-                <div class="flex flex-col self-stretch">
-                  <p class="text-base font-normal">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec feugiat fringilla lorem sed bibendum.What I do for my
-                    customers
-                  </p>
-                </div>
-              </div>
-              <button class="">CONNECT WITH ME</button>
+          <div class="flex w-full flex-col items-start gap-4 self-stretch">
+            <div class="flex flex-col self-stretch">
+              <h3 class="text-5xl font-semibold leading-10">
+                What I do for my customers
+              </h3>
             </div>
-            <!-- Card Customer-->
-            <div
-              class="flex rounded-lg shadow-lg bg-white w-[18.75rem] p-8 flex-col items-start gap-8"
-            >
-              <div class="w-[2.25rem] h-[2.25rem]">
-                <img src="/icons/monitor.png" alt="Monitor" class="" />
-              </div>
-              <div class="flex flex-col gap-4 self-stretch">
-                <h3 class="text-2xl font-semibold leading-8">UI/UX Design</h3>
-                <p class="text-base font-normal leading-7">
-                  Websites, application or other design related tasks. I love
-                  tackling digital problems.
-                </p>
-              </div>
+            <div class="flex flex-col self-stretch">
+              <p class="text-base font-normal">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                feugiat fringilla lorem sed bibendum.What I do for my customers
+              </p>
+            </div>
+          </div>
+          <button class="">CONNECT WITH ME</button>
+        </div>
+        <!-- Card Customer-->
+        <div
+          class="flex rounded-lg shadow-lg bg-white xl:w-[18.75rem] p-8 flex-col items-start gap-8"
+        >
+          <div class="w-[2.25rem] h-[2.25rem]">
+            <img src="/icons/monitor.png" alt="Monitor" class="" />
+          </div>
+          <div class="flex flex-col gap-4 self-stretch">
+            <h3 class="text-2xl font-semibold leading-8">UI/UX Design</h3>
+            <p class="text-base font-normal leading-7">
+              Websites, application or other design related tasks. I love
+              tackling digital problems.
+            </p>
+          </div>
+        </div>
+        <!--End  Card Customer-->
+        <aside class="flex flex-col gap-16">
+          <!-- Card Customer-->
+          <div
+            class="flex rounded-lg shadow-lg bg-white xl:w-[18.75rem] p-8 flex-col items-start gap-8"
+          >
+            <div class="w-[2.25rem] h-[2.25rem]">
+              <img src="/icons/play.png" alt="Play" class="" />
+            </div>
+            <div class="flex flex-col gap-4 self-stretch">
+              <h3 class="text-2xl font-semibold leading-8">UI/UX Design</h3>
+              <p class="text-base font-normal leading-7">
+                Websites, application or other design related tasks. I love
+                tackling digital problems.
+              </p>
             </div>
             <!--End  Card Customer-->
-            <aside class="flex flex-col gap-16">
-              <!-- Card Customer-->
-              <div
-                class="flex rounded-lg shadow-lg bg-white w-[18.75rem] p-8 flex-col items-start gap-8"
-              >
-                <div class="w-[2.25rem] h-[2.25rem]">
-                  <img src="/icons/play.png" alt="Play" class="" />
-                </div>
-                <div class="flex flex-col gap-4 self-stretch">
-                  <h3 class="text-2xl font-semibold leading-8">UI/UX Design</h3>
-                  <p class="text-base font-normal leading-7">
-                    Websites, application or other design related tasks. I love
-                    tackling digital problems.
-                  </p>
-                </div>
-                <!--End  Card Customer-->
-              </div>
-              <!-- Card Customer-->
-              <div
-                class="flex rounded-lg shadow-lg bg-white w-[18.75rem] p-8 flex-col items-start gap-8"
-              >
-                <div class="w-[2.25rem] h-[2.25rem]">
-                  <img src="/icons/watch.png " alt="Watch" class="" />
-                </div>
-                <div class="flex flex-col gap-4 self-stretch">
-                  <h3 class="text-2xl font-semibold leading-8">UI/UX Design</h3>
-                  <p class="text-base font-normal leading-7">
-                    Websites, application or other design related tasks. I love
-                    tackling digital problems.
-                  </p>
-                </div>
-                <!--End  Card Customer-->
-              </div>
-            </aside>
+          </div>
+          <!-- Card Customer-->
+          <div
+            class="flex rounded-lg shadow-lg bg-white xl:w-[18.75rem] p-8 flex-col items-start gap-8"
+          >
+            <div class="w-[2.25rem] h-[2.25rem]">
+              <img src="/icons/watch.png " alt="Watch" class="" />
+            </div>
+            <div class="flex flex-col gap-4 self-stretch">
+              <h3 class="text-2xl font-semibold leading-8">UI/UX Design</h3>
+              <p class="text-base font-normal leading-7">
+                Websites, application or other design related tasks. I love
+                tackling digital problems.
+              </p>
+            </div>
+            <!--End  Card Customer-->
           </div>
         </aside>
-      </article>
-    </section>
-
-    <!-- End Services Component -->
-    <!-- Enterprise Component -->
-    <section class="flex flex-col items-center mx-auto py-28 max-w-7xl gap-10">
-      <div class="separator w-full">
-        <span class="text">CRAFTED DEVELOPMENTS FOR</span>
       </div>
-      <article class="flex justify-center items-center gap-8 self-stretch">
-        <img src="/images/branger.svg" width="150px" alt="Branger_Briz" />
-        <img src="/images/adidas.png" width="150px" alt="Adidas" />
-        <img src="/images/nike.png" width="70px" alt="Nike" />
-        <img src="/images/paramount.png" width="130px" alt="Paramount" />
-      </article>
-      <div class="separator w-full">
-        <span class="text">MORE THAN 10+ BRANDS</span>
-      </div>
-    </section>
-    <!-- End Enterprise Component -->
-    <!-- About Component -->
-    <section class="flex justify-center mx-auto py-28 max-w-7xl">
-      <aside class="flex px-8 shadow-lg gap-x-10">
-        <article class="w-[30rem]">
-          <h3 class="font-semibold text-5xl">A bit about me</h3>
-          <p class="py-8 text-base font-normal leading-7">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
-            in et, lectus sit lorem id integer. Nunc odio in et, lectus sit
-            lorem id integer. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Nunc odio in et, lectus sit lorem id integer. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Nunc odio in et,
-            lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nunc odio in et, lectus sit lorem id integer.
-          </p>
-        </article>
-        <article>
-          <img class="rounded-full" src="/images/1.png" />
-        </article>
-      </aside>
-    </section>
-    <!-- End About Component -->
+    </aside>
+  </section>
 
-    <!-- Data component -->
-    <section class="flex flex-col items-center mx-auto py-28 max-w-7xl gap-10">
-      <div class="separator w-full"></div>
-      <article class="flex justify-evenly items-center gap-10 self-stretch">
-        <div>
-          <h3 class="text-4xl font-semibold">5</h3>
-          <span class="text">YEARS OF <br /> EXPERIENCE</span>
-        </div>
-        <div>
-          <h3 class="text-4xl font-semibold">+6</h3>
-          <span class="text">WEB AND MOBILE <br /> APPS SHIPPED</span>
-        </div>
-        <div>
-          <h3 class="text-4xl font-semibold">+250</h3>
-          <span class="text">TASKS <br /> COMPLETED</span>
-        </div>
-      </article>
-      <div class="separator w-full"></div>
-    </section>
-    <!--End Data component -->
-  </main>
-
-  <footer class="bg-black flex gap-10">
+  <!-- End Services Component -->
+  <!-- Enterprise Component -->
+  <section class="flex flex-col items-center mx-auto py-28 max-w-7xl gap-10">
+    <div class="separator w-full">
+      <span class="text">CRAFTED DEVELOPMENTS FOR</span>
+    </div>
     <article
-      class="flex justify-around gap-14 py-11 container mx-auto text-white"
+      class="flex w-full flex-wrap justify-center items-center gap-8 self-stretch"
     >
-      <aside class="gap-10">
-        <div class="mb-8">
-          <p class="text-3xl font-semibold">Have an idea?</p>
-          <p class="text-3xl">Let's talk ↗</p>
-        </div>
-        <div class="mt-8">
-          <p class="text-lg">hi@differnt.dev</p>
-        </div>
-      </aside>
-      <aside class="flex justify-center items-start gap-3.5">
-        <a href="#">
-          <img src="/images/icon-instagram-white.svg" alt="camilohreina" />
-        </a>
-        <a href="#">
-          <img src="/images/icon-gitlab-white.svg" alt="juan_c.hernandez_r" />
-        </a>
-        <a href="#">
-          <img src="/images/icon-github-white.svg" alt="camilohreina" />
-        </a>
-        <a href="#">
-          <img src="/images/icon-linkedin-white.svg" alt="camilohreina" />
-        </a>
-        <a href="#">
-          <img src="/images/icon-twitter-white.svg" alt="camilohreina" />
-        </a>
-      </aside>
+      <img src="/images/branger.svg" width="150px" alt="Branger_Briz" />
+      <img src="/images/adidas.png" width="150px" alt="Adidas" />
+      <img src="/images/nike.png" width="70px" alt="Nike" />
+      <img src="/images/paramount.png" width="130px" alt="Paramount" />
     </article>
-  </footer>
+    <div class="separator w-full">
+      <span class="text">MORE THAN 10+ BRANDS</span>
+    </div>
+  </section>
+  <!-- End Enterprise Component -->
+  <!-- About Component -->
+  <section class="flex justify-center mx-auto py-28 max-w-7xl">
+    <aside class="flex flex-wrap justify-center p-8 shadow-lg gap-x-10">
+      <article class="max-w-[30rem]">
+        <h3 class="font-semibold text-5xl">A bit about me</h3>
+        <p class="py-8 text-base font-normal leading-7">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in
+          et, lectus sit lorem id integer. Nunc odio in et, lectus sit lorem id
+          integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Nunc odio in et, lectus. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus
+          sit lorem id integer.
+        </p>
+      </article>
+      <article>
+        <img class="rounded-full" src="/images/1.png" />
+      </article>
+    </aside>
+  </section>
+  <!-- End About Component -->
+
+  <!-- Data component -->
+  <section class="flex flex-col items-center mx-auto py-28 max-w-7xl gap-10">
+    <div class="separator w-full"></div>
+    <article
+      class="flex flex-wrap justify-evenly items-center gap-10 self-stretch"
+    >
+      <div>
+        <h3 class="text-4xl font-semibold">5</h3>
+        <span class="text">YEARS OF <br /> EXPERIENCE</span>
+      </div>
+      <div>
+        <h3 class="text-4xl font-semibold">+6</h3>
+        <span class="text">WEB AND MOBILE <br /> APPS SHIPPED</span>
+      </div>
+      <div>
+        <h3 class="text-4xl font-semibold">+250</h3>
+        <span class="text">TASKS <br /> COMPLETED</span>
+      </div>
+    </article>
+    <div class="separator w-full"></div>
+  </section>
+  <!--End Data component -->
 </Layout>
+
+<footer class="bg-black flex gap-10">
+  <article
+    class="flex justify-around gap-14 px-6 py-11 container mx-auto text-white"
+  >
+    <aside class="gap-10">
+      <div class="mb-8">
+        <p class="text-3xl font-semibold">Have an idea?</p>
+        <p class="text-3xl">Let's talk ↗</p>
+      </div>
+      <div class="mt-8">
+        <p class="text-lg">hi@differnt.dev</p>
+      </div>
+    </aside>
+    <aside class="flex justify-center items-start gap-3.5">
+      <a href="#">
+        <img src="/images/icon-instagram-white.svg" alt="camilohreina" />
+      </a>
+      <a href="#">
+        <img src="/images/icon-gitlab-white.svg" alt="juan_c.hernandez_r" />
+      </a>
+      <a href="#">
+        <img src="/images/icon-github-white.svg" alt="camilohreina" />
+      </a>
+      <a href="#">
+        <img src="/images/icon-linkedin-white.svg" alt="camilohreina" />
+      </a>
+      <a href="#">
+        <img src="/images/icon-twitter-white.svg" alt="camilohreina" />
+      </a>
+    </aside>
+  </article>
+</footer>
 
 <style>
   .separator {
