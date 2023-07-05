@@ -12,7 +12,7 @@ import Layout from "../layouts/Layout.astro";
         <div><p class="font-bold">Hola!</p></div>
         <nav>
           <ul
-            class="flex [&>li>a]:text-sm md:[&>li>a]:text-normal [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+            class="flex [&>li>a]:text-sm md:[&>li>a]:text-base [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
           >
             <li><a href="#">Work</a></li>
             <li><a href="#">Services</a></li>
@@ -31,7 +31,7 @@ import Layout from "../layouts/Layout.astro";
           Hey there, I’m Camilo Hernández 👋
         </h2>
         <h1
-          class="text-5xl lg:text-7xl leading-normal font-semibold text-center"
+          class="text-3xl md:text-5xl lg:text-7xl leading-normal font-semibold text-center"
         >
           Developing digital products, services and experience.
         </h1>
@@ -130,9 +130,11 @@ import Layout from "../layouts/Layout.astro";
     <aside
       class="md:p-8 lg:p-0 w-full flex rounded-md bg-blue-box items-center gap-3 shrink-0"
     >
-      <div class="flex flex-col lg:flex-row items-center justify-center gap-6">
+      <div
+        class="flex flex-col lg:flex-row items-center justify-center gap-6 mx-auto"
+      >
         <div
-          class="flex w-full xl:w-[30.5rem] px-14 flex-col items-start gap-8"
+          class="flex w-full xl:w-[30.5rem] py-6 px-14 flex-col items-start gap-8"
         >
           <div class="flex w-full flex-col items-start gap-4 self-stretch">
             <div class="flex flex-col self-stretch">
