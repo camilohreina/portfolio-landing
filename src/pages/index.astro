@@ -2,10 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Differnt Portfolio">
+<Layout title="Hey there, I’m Camilo 👋">
   <main class="container mx-auto">
     <!-- Navigator component -->
-    <section class="w-full">
+    <section id="hi" class="w-full">
       <header
         class="py-6 px-4 md:px-10 flex items-center container justify-between"
       >
@@ -14,10 +14,10 @@ import Layout from "../layouts/Layout.astro";
           <ul
             class="flex [&>li>a]:text-sm md:[&>li>a]:text-base [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
           >
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="mailto:camilohreina.dev@gmail.com">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -37,20 +37,19 @@ import Layout from "../layouts/Layout.astro";
         </h1>
       </article>
       <article class="flex justify-center items-start gap-3.5">
-        <a href="#">
+        <a href="https://www.instagram.com/camilohreina/">
           <img src="/images/icon-instagram.svg" alt="camilohreina" />
         </a>
-        <a href="#">
+        <a href="https://gitlab.com/camilohreina">
           <img src="/images/icon-gitlab.svg" alt="juan_c.hernandez_r" />
         </a>
-        <a href="#">
+        <a href="https://github.com/camilohreina">
           <img src="/images/icon-github.svg" alt="camilohreina" />
         </a>
-        <a href="#">
+        <a
+          href="https://www.linkedin.com/in/camilo-hern%C3%A1ndez-%E3%83%84-a684b219a/"
+        >
           <img src="/images/icon-linkedin.svg" alt="camilohreina" />
-        </a>
-        <a href="#">
-          <img src="/images/icon-twitter.svg" alt="camilohreina" />
         </a>
       </article>
     </section>
@@ -88,7 +87,10 @@ import Layout from "../layouts/Layout.astro";
     <!-- End Stack Component -->
 
     <!-- Projects Component -- TODO: Make card design-->
-    <section class="flex flex-col items-center gap-12 py-28 mx-auto max-w-7xl">
+    <section
+      id="work"
+      class="flex flex-col items-center gap-12 py-28 mx-auto max-w-7xl"
+    >
       <article class="flex w-full items-start gap-2 px-20">
         <h3 class="font-semibold text-3xl lg:text-5xl lg:leading-[3.75rem]">
           The work I do, <br /> and business I help.
@@ -126,7 +128,10 @@ import Layout from "../layouts/Layout.astro";
   <!-- End Projects Component -->
 
   <!-- Services Component -->
-  <section class="flex flex-col gap-10 items-center py-28 mx-auto max-w-7xl">
+  <section
+    id="services"
+    class="flex flex-col gap-10 items-center py-28 mx-auto max-w-7xl"
+  >
     <aside
       class="md:p-8 lg:p-0 w-full flex rounded-md bg-blue-box items-center gap-3 shrink-0"
     >
@@ -225,18 +230,20 @@ import Layout from "../layouts/Layout.astro";
   </section>
   <!-- End Enterprise Component -->
   <!-- About Component -->
-  <section class="flex justify-center mx-auto py-28 max-w-7xl">
-    <aside class="flex flex-wrap justify-center p-8 shadow-lg gap-x-10">
+  <section id="about" class="flex justify-center mx-auto py-28 max-w-7xl">
+    <aside
+      class="flex flex-wrap justify-center items-center p-8 shadow-lg gap-x-10"
+    >
       <article class="max-w-[30rem]">
         <h3 class="font-semibold text-5xl">A bit about me</h3>
         <p class="py-8 text-base font-normal leading-7">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in
-          et, lectus sit lorem id integer. Nunc odio in et, lectus sit lorem id
-          integer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          odio in et, lectus sit lorem id integer. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Nunc odio in et, lectus. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus
-          sit lorem id integer.
+          Hey 👋, I'm Camilo, a software engineer based in Cali, who loves
+          coding and creating products with an enjoyable user experience.<br /> I
+          love working between product, engineering and developer experience. Some
+          things that excite me are JavaScript, open source, simplicity, automating
+          things, creating meaningful user-centric products and being constantly
+          learning on a daily basis. <br />I really enjoy learning and
+          supporting the open source community
         </p>
       </article>
       <article>
@@ -267,43 +274,64 @@ import Layout from "../layouts/Layout.astro";
     </article>
     <div class="separator w-full"></div>
   </section>
+  <a id="to-top" href="#hi" type="button" class="to-top">
+    <svg
+      fill="#000000"
+      height="30px"
+      width="30px"
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 330 330"
+      xml:space="preserve"
+    >
+      <path
+        id="XMLID_224_"
+        d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+   l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+   C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"
+      ></path>
+    </svg>
+  </a>
   <!--End Data component -->
+  <footer class="bg-black flex gap-10">
+    <article
+      class="flex justify-around gap-14 px-6 py-11 container mx-auto text-white"
+    >
+      <aside class="gap-10">
+        <div class="mb-8">
+          <p class="text-3xl font-semibold">Have an idea?</p>
+          <p class="text-3xl">Let's talk ↗</p>
+        </div>
+        <div class="mt-8">
+          <p class="text-lg">hi@differnt.dev</p>
+        </div>
+      </aside>
+      <aside class="flex justify-center items-start gap-3.5">
+        <a href="https://www.instagram.com/camilohreina/">
+          <img src="/images/icon-instagram-white.svg" alt="camilohreina" />
+        </a>
+        <a href="https://gitlab.com/camilohreina">
+          <img src="/images/icon-gitlab-white.svg" alt="juan_c.hernandez_r" />
+        </a>
+        <a href="https://github.com/camilohreina">
+          <img src="/images/icon-github-white.svg" alt="camilohreina" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/camilo-hern%C3%A1ndez-%E3%83%84-a684b219a/"
+        >
+          <img src="/images/icon-linkedin-white.svg" alt="camilohreina" />
+        </a>
+      </aside>
+    </article>
+  </footer>
 </Layout>
 
-<footer class="bg-black flex gap-10">
-  <article
-    class="flex justify-around gap-14 px-6 py-11 container mx-auto text-white"
-  >
-    <aside class="gap-10">
-      <div class="mb-8">
-        <p class="text-3xl font-semibold">Have an idea?</p>
-        <p class="text-3xl">Let's talk ↗</p>
-      </div>
-      <div class="mt-8">
-        <p class="text-lg">hi@differnt.dev</p>
-      </div>
-    </aside>
-    <aside class="flex justify-center items-start gap-3.5">
-      <a href="#">
-        <img src="/images/icon-instagram-white.svg" alt="camilohreina" />
-      </a>
-      <a href="#">
-        <img src="/images/icon-gitlab-white.svg" alt="juan_c.hernandez_r" />
-      </a>
-      <a href="#">
-        <img src="/images/icon-github-white.svg" alt="camilohreina" />
-      </a>
-      <a href="#">
-        <img src="/images/icon-linkedin-white.svg" alt="camilohreina" />
-      </a>
-      <a href="#">
-        <img src="/images/icon-twitter-white.svg" alt="camilohreina" />
-      </a>
-    </aside>
-  </article>
-</footer>
-
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
   .separator {
     display: flex;
     align-items: center;
@@ -330,4 +358,41 @@ import Layout from "../layouts/Layout.astro";
     line-height: 1.25rem;
     letter-spacing: 0.125rem;
   }
+  .to-top {
+    background-color: white !important;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+    border: 1px solid #1f1f1f;
+  }
+
+  .active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+  }
 </style>
+
+<script>
+  const toTop = document.querySelector("#to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+      toTop.classList.add("active");
+    } else {
+      toTop.classList.remove("active");
+    }
+  });
+</script>
