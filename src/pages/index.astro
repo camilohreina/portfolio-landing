@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Hey there, I’m Camilo 👋">
-  <main class="container mx-auto">
+  <main id="main" class="container mx-auto fade-in-top">
     <!-- Navigator component -->
     <section id="hi" class="w-full">
       <header
@@ -38,19 +38,35 @@ import Layout from "../layouts/Layout.astro";
       </article>
       <article class="flex justify-center items-start gap-3.5">
         <a href="https://www.instagram.com/camilohreina/" target="_blank">
-          <img src="/images/icon-instagram.svg" alt="camilohreina" />
+          <img
+            class="hvr-wobble-vertical"
+            src="/images/icon-instagram.svg"
+            alt="camilohreina"
+          />
         </a>
         <a href="https://gitlab.com/camilohreina" target="_blank">
-          <img src="/images/icon-gitlab.svg" alt="juan_c.hernandez_r" />
+          <img
+            class="hvr-wobble-vertical"
+            src="/images/icon-gitlab.svg"
+            alt="juan_c.hernandez_r"
+          />
         </a>
         <a href="https://github.com/camilohreina" target="_blank">
-          <img src="/images/icon-github.svg" alt="camilohreina" />
+          <img
+            class="hvr-wobble-vertical"
+            src="/images/icon-github.svg"
+            alt="camilohreina"
+          />
         </a>
         <a
           href="https://www.linkedin.com/in/camilo-hern%C3%A1ndez-%E3%83%84-a684b219a/"
           target="_blank"
         >
-          <img src="/images/icon-linkedin.svg" alt="camilohreina" />
+          <img
+            class="hvr-wobble-vertical"
+            src="/images/icon-linkedin.svg"
+            alt="camilohreina"
+          />
         </a>
       </article>
     </section>
@@ -62,20 +78,24 @@ import Layout from "../layouts/Layout.astro";
         <span class="text">STACK</span>
       </div>
       <article
-        class="flex w-full flex-wrap scale-75 justify-center items-center gap-8 self-stretch"
+        class="flex w-full flex-wrap scale-75 justify-center items-center gap-8 self-stretch [&>img]:cursor-pointer"
       >
-        <img src="/images/js.svg" alt="JavaScript" />
-        <img src="/images/typescript.svg" alt="TypeScript" />
-        <img src="/images/vue.svg" alt="VueJs" />
-        <img src="/images/react.svg" alt="ReactJs" />
-        <img src="/images/nodejs.svg" alt="NodeJS" />
-        <img src="/images/python.svg" alt="Python" />
-        <img src="/images/aws.svg" alt="AWS" />
-        <img src="/images/linux.svg" alt="Linux" />
-        <img src="/images/docker.svg" alt="Docker" />
-        <img src="/images/mysql.svg" alt="MySQL" />
-        <img src="/images/mongodb.svg" alt="MongoDB" />
-        <img src="/images/git.svg" alt="Git" />
+        <img class="hvr-grow-shadow" src="/images/js.svg" alt="JavaScript" />
+        <img
+          class="hvr-grow-shadow"
+          src="/images/typescript.svg"
+          alt="TypeScript"
+        />
+        <img class="hvr-grow-shadow" src="/images/vue.svg" alt="VueJs" />
+        <img class="hvr-grow-shadow" src="/images/react.svg" alt="ReactJs" />
+        <img class="hvr-grow-shadow" src="/images/nodejs.svg" alt="NodeJS" />
+        <img class="hvr-grow-shadow" src="/images/python.svg" alt="Python" />
+        <img class="hvr-grow-shadow" src="/images/aws.svg" alt="AWS" />
+        <img class="hvr-grow-shadow" src="/images/linux.svg" alt="Linux" />
+        <img class="hvr-grow-shadow" src="/images/docker.svg" alt="Docker" />
+        <img class="hvr-grow-shadow" src="/images/mysql.svg" alt="MySQL" />
+        <img class="hvr-grow-shadow" src="/images/mongodb.svg" alt="MongoDB" />
+        <img class="hvr-grow-shadow" src="/images/git.svg" alt="Git" />
       </article>
       <div class="separator w-full">
         <img
@@ -150,8 +170,9 @@ import Layout from "../layouts/Layout.astro";
             </div>
             <div class="flex flex-col self-stretch">
               <p class="text-base font-normal">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                feugiat fringilla lorem sed bibendum.What I do for my customers
+                Develop web and mobile applications, improve the performance of
+                the platforms used and advise customers to make infrastructure
+                changes or improve the features of their products.
               </p>
             </div>
           </div>
@@ -222,10 +243,30 @@ import Layout from "../layouts/Layout.astro";
     <article
       class="flex w-full flex-wrap justify-center items-center gap-8 self-stretch"
     >
-      <img src="/images/branger.svg" width="150px" alt="Branger_Briz" />
-      <img src="/images/adidas.png" width="150px" alt="Adidas" />
-      <img src="/images/nike.png" width="70px" alt="Nike" />
-      <img src="/images/paramount.png" width="130px" alt="Paramount" />
+      <img
+        class="hvr-grow-shadow"
+        src="/images/branger.svg"
+        width="150px"
+        alt="Branger_Briz"
+      />
+      <img
+        class="hvr-grow-shadow"
+        src="/images/adidas.png"
+        width="150px"
+        alt="Adidas"
+      />
+      <img
+        class="hvr-grow-shadow"
+        src="/images/nike.png"
+        width="70px"
+        alt="Nike"
+      />
+      <img
+        class="hvr-grow-shadow"
+        src="/images/paramount.png"
+        width="130px"
+        alt="Paramount"
+      />
     </article>
     <div class="separator w-full">
       <span class="text">MORE THAN 10+ BRANDS</span>
@@ -386,6 +427,126 @@ import Layout from "../layouts/Layout.astro";
     bottom: 32px;
     pointer-events: auto;
     opacity: 1;
+  }
+
+  .fade-in-top {
+    -webkit-animation: fade-in-top 0.6s ease-out both;
+    animation: fade-in-top 0.6s ease-out both;
+  }
+  @-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  .hvr-grow-shadow:hover,
+  .hvr-grow-shadow:focus,
+  .hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  @-webkit-keyframes hvr-wobble-vertical {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes hvr-wobble-vertical {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  .hvr-wobble-vertical {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-wobble-vertical:hover,
+  .hvr-wobble-vertical:focus,
+  .hvr-wobble-vertical:active {
+    -webkit-animation-name: hvr-wobble-vertical;
+    animation-name: hvr-wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
   }
 </style>
 
