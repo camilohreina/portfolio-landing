@@ -1,59 +1,13 @@
 ---
 import Navigator from "../components/Navigator.astro";
+import Presentation from "../components/Presentation.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Hey there, I’m Camilo 👋">
   <main id="main" class="container mx-auto fade-in-top">
     <Navigator />
-
-    <!-- Presentation Component -->
-    <section class="py-28 flex flex-col items-center mx-auto max-w-7xl gap-10">
-      <article class="flex flex-col gap-10 self-stretch">
-        <h2 class="text-xl font-medium text-center">
-          Hey there, I’m Camilo Hernández 👋
-        </h2>
-        <h1
-          class="text-3xl md:text-5xl lg:text-7xl leading-normal font-semibold text-center"
-        >
-          Developing digital products, services and experience.
-        </h1>
-      </article>
-      <article class="flex justify-center items-start gap-3.5">
-        <a href="https://www.instagram.com/camilohreina/" target="_blank">
-          <img
-            class="hvr-wobble-vertical"
-            src="/images/icon-instagram.svg"
-            alt="camilohreina"
-          />
-        </a>
-        <a href="https://gitlab.com/camilohreina" target="_blank">
-          <img
-            class="hvr-wobble-vertical"
-            src="/images/icon-gitlab.svg"
-            alt="juan_c.hernandez_r"
-          />
-        </a>
-        <a href="https://github.com/camilohreina" target="_blank">
-          <img
-            class="hvr-wobble-vertical"
-            src="/images/icon-github.svg"
-            alt="camilohreina"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/camilo-hern%C3%A1ndez-%E3%83%84-a684b219a/"
-          target="_blank"
-        >
-          <img
-            class="hvr-wobble-vertical"
-            src="/images/icon-linkedin.svg"
-            alt="camilohreina"
-          />
-        </a>
-      </article>
-    </section>
-    <!-- End Presentation Component -->
+    <Presentation />
 
     <!-- Stack Component -->
     <section class="flex flex-col items-center mx-auto py-28 max-w-7xl gap-10">
@@ -463,78 +417,6 @@ import Layout from "../layouts/Layout.astro";
   .hvr-grow:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-  }
-
-  @-webkit-keyframes hvr-wobble-vertical {
-    16.65% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
-    33.3% {
-      -webkit-transform: translateY(-6px);
-      transform: translateY(-6px);
-    }
-    49.95% {
-      -webkit-transform: translateY(4px);
-      transform: translateY(4px);
-    }
-    66.6% {
-      -webkit-transform: translateY(-2px);
-      transform: translateY(-2px);
-    }
-    83.25% {
-      -webkit-transform: translateY(1px);
-      transform: translateY(1px);
-    }
-    100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-  }
-  @keyframes hvr-wobble-vertical {
-    16.65% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
-    33.3% {
-      -webkit-transform: translateY(-6px);
-      transform: translateY(-6px);
-    }
-    49.95% {
-      -webkit-transform: translateY(4px);
-      transform: translateY(4px);
-    }
-    66.6% {
-      -webkit-transform: translateY(-2px);
-      transform: translateY(-2px);
-    }
-    83.25% {
-      -webkit-transform: translateY(1px);
-      transform: translateY(1px);
-    }
-    100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-  }
-  .hvr-wobble-vertical {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  .hvr-wobble-vertical:hover,
-  .hvr-wobble-vertical:focus,
-  .hvr-wobble-vertical:active {
-    -webkit-animation-name: hvr-wobble-vertical;
-    animation-name: hvr-wobble-vertical;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
   }
 </style>
 
