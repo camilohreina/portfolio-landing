@@ -3,6 +3,7 @@ import Navigator from "../components/Navigator.astro";
 import Presentation from "../components/Presentation.astro";
 import Stack from "../components/Stack.astro";
 import Projects from "../components/Projects.astro";
+import Services from "../components/Services.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -13,105 +14,8 @@ import Layout from "../layouts/Layout.astro";
     <Stack />
     <Projects />
   </main>
+  <Services />
 
-  <!-- Services Component -->
-  <section
-    id="services"
-    class="flex flex-col gap-10 items-center py-28 mx-auto max-w-7xl"
-  >
-    <aside
-      class="md:p-8 lg:p-0 w-full flex rounded-md bg-blue-box items-center gap-3 shrink-0"
-    >
-      <div
-        class="flex flex-col lg:flex-row items-center justify-center gap-6 mx-auto"
-      >
-        <div
-          class="flex w-full xl:w-[30.5rem] py-6 px-14 flex-col items-start gap-8"
-        >
-          <div class="flex w-full flex-col items-start gap-4 self-stretch">
-            <div class="flex flex-col self-stretch">
-              <h3 class="text-5xl font-semibold leading-10">
-                What I do for my customers
-              </h3>
-            </div>
-            <div class="flex flex-col self-stretch">
-              <p class="text-base font-normal">
-                Develop web and mobile applications, improve the performance of
-                the platforms used and platforms and advise clients on
-                infrastructure changes or or improve the functionality of their
-                products.
-              </p>
-            </div>
-          </div>
-          <a
-            type="button"
-            href="mailto:camilohreina.dev@gmail.com"
-            class="relative cursor-pointer inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
-          >
-            <span
-              class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
-            >
-              CONNECT WITH ME
-            </span>
-          </a>
-        </div>
-        <!-- Card Customer-->
-        <div
-          class="flex rounded-lg shadow-lg bg-white xl:w-[18.75rem] p-8 flex-col items-start gap-8"
-        >
-          <div class="w-[2.25rem] h-[2.25rem]">
-            <img src="/icons/monitor.png" alt="Monitor" class="" />
-          </div>
-          <div class="flex flex-col gap-4 self-stretch">
-            <h3 class="text-2xl font-semibold leading-8">
-              Software Development
-            </h3>
-            <p class="text-base font-normal leading-7">
-              Developing websites and web applications, new features or
-              utilities. Passionate about solving problems.
-            </p>
-          </div>
-        </div>
-        <!--End  Card Customer-->
-        <aside class="flex flex-col gap-16">
-          <!-- Card Customer-->
-          <div
-            class="flex rounded-lg shadow-lg bg-white xl:w-[18.75rem] p-8 flex-col items-start gap-8"
-          >
-            <div class="w-[2.25rem] h-[2.25rem]">
-              <img src="/icons/play.png" alt="Play" class="" />
-            </div>
-            <div class="flex flex-col gap-4 self-stretch">
-              <h3 class="text-2xl font-semibold leading-8">UI/UX Design</h3>
-              <p class="text-base font-normal leading-7">
-                Websites, applications or other design-related tasks. I love
-                solving digital problems.
-              </p>
-            </div>
-            <!--End  Card Customer-->
-          </div>
-          <!-- Card Customer-->
-          <div
-            class="flex rounded-lg shadow-lg bg-white xl:w-[18.75rem] p-8 flex-col items-start gap-8"
-          >
-            <div class="w-[2.25rem] h-[2.25rem]">
-              <img src="/icons/watch.png " alt="Watch" class="" />
-            </div>
-            <div class="flex flex-col gap-4 self-stretch">
-              <h3 class="text-2xl font-semibold leading-8">Data Science</h3>
-              <p class="text-base font-normal leading-7">
-                Combines tools, methodologies and technologies to extract
-                meaning from data. It adds value to business information.
-              </p>
-            </div>
-            <!--End  Card Customer-->
-          </div>
-        </aside>
-      </div>
-    </aside>
-  </section>
-
-  <!-- End Services Component -->
   <!-- Enterprise Component -->
   <section class="flex flex-col items-center mx-auto py-28 max-w-7xl gap-10">
     <div class="separator w-full">
@@ -145,6 +49,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
   <!-- End Enterprise Component -->
+
   <!-- About Component -->
   <section id="about" class="flex justify-center mx-auto py-28 max-w-7xl">
     <aside
