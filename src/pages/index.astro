@@ -2,6 +2,7 @@
 import Navigator from "../components/Navigator.astro";
 import Presentation from "../components/Presentation.astro";
 import Stack from "../components/Stack.astro";
+import Projects from "../components/Projects.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -10,47 +11,8 @@ import Layout from "../layouts/Layout.astro";
     <Navigator />
     <Presentation />
     <Stack />
-
-    <!-- Projects Component -- TODO: Make card design-->
-    <section
-      id="work"
-      class="flex flex-col items-center gap-12 py-28 mx-auto max-w-7xl"
-    >
-      <article class="flex w-full items-start gap-2 px-20">
-        <h2 class="font-semibold text-3xl lg:text-5xl lg:leading-[3.75rem]">
-          The work I do, <br /> and business I help.
-        </h2>
-      </article>
-      <article
-        class="flex w-full p-4 lg:p-0 items-start justify-around flex-wrap gap-8"
-      >
-        <section class="flex flex-col shadow-md rounded-md">
-          <img alt="Adicustom" src="/projects/adidas-project.png" />
-          <div class="flex flex-row justify-around items-center">
-            <h3 class="text-xl font-semibold leading-4">Adicustom</h3>
-            <div class="flex flex-row justify-end gap-x-6 py-6 [&>img]:w-8">
-              <img src="/images/typescript-gray.svg" alt="VueJs" />
-              <img src="/images/vue-gray.svg" alt="VueJs" />
-              <img src="/images/node-gray.svg" alt="ReactJs" />
-            </div>
-          </div>
-        </section>
-
-        <section class="flex flex-col shadow-md rounded-md">
-          <img alt="Nikecustom Caps" src="/projects/nike-project.png" />
-          <div class="flex flex-row justify-around items-center">
-            <h3 class="text-xl font-semibold leading-4">Nike Caps</h3>
-            <div class="flex flex-row justify-end gap-x-6 py-6 [&>img]:w-8">
-              <img src="/images/js-gray.svg" alt="VueJs" />
-              <img src="/images/react-gray.svg" alt="ReactJs" />
-              <img src="/images/node-gray.svg" alt="NodeJS" />
-            </div>
-          </div>
-        </section>
-      </article>
-    </section>
+    <Projects />
   </main>
-  <!-- End Projects Component -->
 
   <!-- Services Component -->
   <section
