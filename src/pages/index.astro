@@ -1,28 +1,11 @@
 ---
+import Navigator from "../components/Navigator.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Hey there, I’m Camilo 👋">
   <main id="main" class="container mx-auto fade-in-top">
-    <!-- Navigator component -->
-    <section id="hi" class="w-full">
-      <header
-        class="py-6 px-4 md:px-10 flex items-center container justify-between"
-      >
-        <div><p class="font-bold text-xl">Diffrent.</p></div>
-        <nav>
-          <ul
-            class="flex [&>li>a]:text-sm md:[&>li>a]:text-base [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
-          >
-            <li><a href="#work">Work</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="mailto:camilohreina.dev@gmail.com">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    </section>
-    <!-- End Navigator Components -->
+    <Navigator />
 
     <!-- Presentation Component -->
     <section class="py-28 flex flex-col items-center mx-auto max-w-7xl gap-10">
