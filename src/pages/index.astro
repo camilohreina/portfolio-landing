@@ -1,14 +1,14 @@
 ---
-import Navigator from "../components/Navigator.astro";
-import Presentation from "../components/Presentation.astro";
-import Stack from "../components/Stack.astro";
-import Projects from "../components/Projects.astro";
-import Services from "../components/Services.astro";
-import Layout from "../layouts/Layout.astro";
-import Enterprise from "../components/Enterprise.astro";
-import About from "../components/About.astro";
-import Data from "../components/Data.astro";
-import Footer from "../components/Footer.astro";
+import Navigator from '../components/Navigator.astro';
+import Presentation from '../components/Presentation.astro';
+import Stack from '../components/Stack.astro';
+import Projects from '../components/Projects.astro';
+import Services from '../components/Services.astro';
+import Layout from '../layouts/Layout.astro';
+import Enterprise from '../components/Enterprise.astro';
+import About from '../components/About.astro';
+import Data from '../components/Data.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Hey there, I’m Camilo 👋">
@@ -17,9 +17,9 @@ import Footer from "../components/Footer.astro";
     <Presentation />
     <Stack />
     <Projects />
+    <Enterprise />
   </main>
   <Services />
-  <Enterprise />
   <About />
   <Data />
   <Footer />
@@ -133,15 +133,15 @@ import Footer from "../components/Footer.astro";
 </style>
 
 <script>
-  const toTop = document.querySelector("#to-top");
+  const toTop = document.querySelector('#to-top');
 
-  window.addEventListener("scroll", () => {
+  window.addEventListener('scroll', () => {
     if (window.pageYOffset > 100) {
       if (!toTop) return;
-      toTop.classList.add("active");
+      toTop.classList.add('active');
     } else {
       if (!toTop) return;
-      toTop.classList.remove("active");
+      toTop.classList.remove('active');
     }
   });
 </script>
