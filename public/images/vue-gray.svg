@@ -1,14 +1,1 @@
-<svg width="101" height="87" viewBox="0 0 101 87" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Asset 122" clip-path="url(#clip0_304_13307)">
-<g id="Group">
-<path id="Vector" d="M80.9329 0.469238H100.933L50.9329 86.7192L0.932861 0.469238H39.1829L50.9329 20.4692L62.4329 0.469238H80.9329Z" fill="#8E8E8E"/>
-<path id="Vector_2" d="M0.932861 0.469238L50.9329 86.7192L100.933 0.469238H80.9329L50.9329 52.2192L20.6829 0.469238H0.932861Z" fill="#8E8E8E"/>
-<path id="Vector_3" d="M20.6829 0.469238L50.9329 52.4692L80.9329 0.469238H62.4329L50.9329 20.4692L39.1829 0.469238H20.6829Z" fill="#454545"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0_304_13307">
-<rect width="100" height="86.25" fill="white" transform="translate(0.932861 0.469238)"/>
-</clipPath>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="101" height="87" fill="none"><g clip-path="url(#a)"><path fill="#8E8E8E" d="M80.933.47h20l-50 86.25L.933.47h38.25l11.75 20 11.5-20h18.5Z"/><path fill="#8E8E8E" d="m.933.47 50 86.25 50-86.25h-20l-30 51.75L20.683.47H.933Z"/><path fill="#454545" d="m20.683.47 30.25 52 30-52h-18.5l-11.5 20-11.75-20h-18.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.933.47h100v86.25h-100z"/></clipPath></defs></svg>
