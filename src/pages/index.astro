@@ -16,13 +16,13 @@ import Footer from '../components/Footer.astro';
     <Navigator />
     <Presentation />
     <Stack />
-    <Projects />
+    <Projects client:visible />
     <Enterprise />
   </main>
-  <Services />
-  <About />
-  <Data />
-  <Footer />
+  <Services client:visible />
+  <About client:visible />
+  <Data client:visible />
+  <Footer client:visible />
 
   <!-- <a href="#hi" type="button" class="to-top">
     <svg
